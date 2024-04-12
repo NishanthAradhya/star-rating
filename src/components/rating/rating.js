@@ -7,7 +7,7 @@ export default function Rating() {
   //I have also created re-usable Ui-component for icons in ui-components folder. we can use that if we are having other icons to be displayed.
   //That is also one of the approach i would use so that we can have reusable components.
   return (
-    <div>
+    <div id="starRating">
     <FontAwesomeIcon color={rating >= 1 ?'yellow':'grey'} icon={faStar} onClick={()=>{setRating(1)}}/>
     <FontAwesomeIcon color={rating >= 2 ?'yellow':'grey'} icon={faStar} onClick={()=>{setRating(2)}}/>
     <FontAwesomeIcon color={rating >= 3 ?'yellow':'grey'} icon={faStar} onClick={()=>{setRating(3)}}/>
